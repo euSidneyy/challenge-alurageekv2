@@ -1,0 +1,242 @@
+:root {
+    --primary-dark: #27254C;
+    --header-footer: #564A94;
+    --card-background: #9B8AB4;
+    --background: #F2ECF8;
+    --button-save: #45B0D2;
+    --text-dark: #1F232F;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1, h2 {
+    font-weight: 800; 
+}
+
+p, input, button {
+    font-weight: 500; 
+}
+
+header {
+    background-color: var(--header-footer);
+    color: var(--background);
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: var(--header-footer);
+    color: var(--background);
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    flex: 1;
+}
+
+.product-section, .add-product {
+    border-radius: 26px;
+    padding: 20px;
+    background-color: var(--background);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.product-section {
+    width: 60%;
+    text-align: center;
+}
+
+.add-product {
+    width: 35%;
+}
+
+.product-section h1, .add-product h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 196px);
+    gap: 40px 30px;
+    justify-content: center;
+}
+
+.product-card {
+    width: 196px; 
+    height: 258px; 
+    background: var(--card-background);
+    border: 1px solid var(--text-dark);
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.product-card img {
+    width: 176px;
+    height: 174px; 
+    object-fit: cover; 
+    border-radius: 10px;
+    margin: 0 auto; 
+}
+
+.product-card h2 {
+    font-size: 15px;
+    font-weight: 600; 
+    color: var(--text-dark);
+    margin: 10; 
+    text-align: center;
+}
+
+.product-card .price-trash-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: auto; 
+    position: relative; 
+}
+
+.product-card .price-trash-container p {
+    font-size: 20px; 
+    font-weight: 700; 
+    color: var(--text-dark);
+    margin: 0; 
+    text-align: center;
+}
+
+.product-card .price-trash-container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; 
+    right: 10px; 
+    bottom: 0; 
+}
+
+.product-card .price-trash-container button img {
+    width: 20px; 
+    height: 20px;
+    filter: invert(100%); 
+}
+
+.add-product form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.add-product input {
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 26px;
+    border: 1px solid var(--text-dark);
+    background-color: var(--background);
+    color: var(--text-dark);
+}
+
+.add-product form .button-group {
+    display: flex;
+    justify-content: space-between; 
+    gap: 20px; 
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 1px solid var(--text-dark);
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    flex: 1; 
+    text-align: center;
+}
+
+button[type="submit"] {
+    background-color: var(--button-save);
+    color: var(--background);
+}
+
+button[type="reset"] {
+    background-color: var(--background);
+    color: var(--text-dark);
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .add-product form .button-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .product-section, .add-product {
+        width: 90%;
+    }
+
+    .product-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px; 
+        justify-items: center; 
+    }
+
+    .product-card {
+        width: 100%; 
+        max-width: 150px; 
+    }
+
+    .add-product form .button-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-list {
+        grid-template-columns: 1fr; 
+    }
+
+    .product-card {
+        max-width: 100%; 
+    }
+}

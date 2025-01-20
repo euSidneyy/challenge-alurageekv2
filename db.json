@@ -1,0 +1,52 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "name": "Satoru Gojo",
+      "price": "2.199",
+      "image": "https://i.pinimg.com/736x/d8/1f/36/d81f360d5170886c68ab277307e978de.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Suguru Geto",
+      "price": "1.980",
+      "image": "https://i.pinimg.com/736x/1d/db/e5/1ddbe5bcd468dfef1bef72862ed5fc6d.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Yuta & Rika",
+      "price": "2.450",
+      "image": "https://i.pinimg.com/736x/b1/e9/50/b1e95062a5772a98e1a266af001a05f0.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Itadori & Sukuna",
+      "price": "5.199",
+      "image": "https://i.pinimg.com/736x/54/19/3f/54193fb1b265a04653381af66c1acb24.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Mini Gojo",
+      "price": "43",
+      "image": "https://i.pinimg.com/736x/04/2f/5a/042f5abf70e5b7f06081e3157b27827d.jpg"
+    },
+    {
+      "id": "6",
+      "name": "Mini Geto",
+      "price": "38",
+      "image": "https://i.pinimg.com/736x/4f/44/35/4f4435d1b13650e6cd6ec404c79626da.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Mini Yuta",
+      "price": "39",
+      "image": "https://i.pinimg.com/736x/92/c9/0d/92c90dee338ce36febb6f9692cb1603d.jpg"
+    },
+    {
+      "id": "8",
+      "name": "Mini Sukuna",
+      "price": "41",
+      "image": "https://i.pinimg.com/736x/28/88/56/288856bf613126cc5271307d557f33f2.jpg"
+    }
+  ]
+}
